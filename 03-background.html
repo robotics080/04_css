@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>배경색 넣기</title>
+    </head>
+    <body>
+        <h1>background-color</h1>
+
+        <h2>background-color</h2>
+        <div class="bg1">background-color</div>
+        <style>
+            .bg1 {
+                background-color: #f00;
+            }
+        </style>
+
+        <h2>background-size</h2>
+        <a href="#" class="box2">라이트 모드로 보기</a>
+        <a href="#" class="box3">라이트 모드로 보기</a>
+        <style>
+            .box3 {
+                width: 182px;
+                height: 90px;
+                /*background-image: url('./images/btn.png');
+                background-repeat: no-repeat;*/
+                background-size: cover;
+                background: #eee url('./images/btn.png') no-repeat 0 0;
+            }
+
+            .box2 {
+                width: 182px;
+                height: 90px;
+                background-image: url('./images/btn.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                text-indent: -10px;
+            }
+        </style>
+
+        <h2>background-image</h2>
+        <div class="box1"></div>
+        <style>
+            .box1 {
+                height: 500px;
+                background-image: url(https://images.unsplash.com/photo-1715708098689-9077c95a4f89?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                background-repeat: no-repeat;
+                background-position: 0% 0%;
+                background-size: 200px 200px;
+            }
+        </style>
+    </body>
+</html>

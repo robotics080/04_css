@@ -4,6 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <title>CSS 배우기</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
         <style>
             header {
                 background-color: #eee;
@@ -13,14 +25,15 @@
     </head>
     <body>
         <div class="wrap">
-            <header>
-                <h1>
+            <header id="header">
+                <h1 id="logo">
                     <a>logo</a>
                 </h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">menu1</a>
-                            <ul>
+                <nav id="gnb" class="gnb">
+                    <ul class="depth1">
+                        <li>
+                            <a href="#"> menu1</a>
+                            <ul class="depth2">
                                 <li><a href="#">menu1-1</a></li>
                                 <li><a href="#">menu1-2</a></li>
                                 <li><a href="#">menu1-3</a></li>
@@ -30,9 +43,8 @@
                         <li><a href="#">menu3</a></li>
                     </ul>
                 </nav>
-
             </header>
-            <main>
+            <main id="main" class="main-intro bg-grey">
                 <section>
                     <h2>section title</h2>
                     <p>section content</p>
@@ -47,6 +59,7 @@
                 </article>
                 <aside></aside>
             </main>
-            <footer>footer</footer>
+            <footer id="footer" class="bg-grey">footer</footer>
+        </div>
     </body>
 </html>
